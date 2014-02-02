@@ -1,0 +1,73 @@
+﻿body {
+    padding: 2em;
+    line-height: 1.2em;
+}
+
+#content {
+    margin-right: 5em;
+    float: left;
+}
+
+h1 {
+    border-bottom: 1em solid rgba(225, 225, 232, 0.81);
+    padding-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: 700;
+    color: #2023a3;
+}
+
+.errorMessages {
+    color: #bd1313;
+}
+/*Temperaturinmatning*/
+.tempInputs {
+    margin-bottom: 0.4em;
+}
+
+.inputs {
+    border: 0.2em inset #2023a3;
+    padding: 0.3em 0.7em 0.3em 0em;
+    text-align: right;
+}
+/*Radioknappar*/
+#convertingDiv {
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+.radioButtons {
+    display: block;
+}
+/*Konverteringsknapp*/
+#sendButton {
+    border: 0.2em outset #fff;
+    border-radius: 0.5em;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    background-color: #2023a3;
+    color: #fff;
+font-size:large;
+    letter-spacing: 0.1em;
+    font-family: Calibri;
+    font-variant: small-caps;
+}
+/*Temperaturtabell*/
+.tableHeader {
+    font-weight: 700;
+    background-color: #2023a3;
+    color: #fff;
+}
+
+    .tableHeader td {
+        text-align: center;
+    }
+
+table, td {
+    border: 0.1em solid #2023a3;
+}
+
+td {
+    min-height: 4em;
+    min-width: 5em;
+    padding: 0.3em 0.7em 0.3em 0em;
+    text-align: right;
+}
