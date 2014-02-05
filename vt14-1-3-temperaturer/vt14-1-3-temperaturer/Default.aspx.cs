@@ -11,7 +11,7 @@ namespace vt14_1_3_temperaturer
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            StartTempLabel.Focus();
+            StartTempTextBox.Focus();
         }
 
         protected void sendButton_Click(object sender, EventArgs e)
@@ -32,6 +32,19 @@ namespace vt14_1_3_temperaturer
                 {
                     RenderHeader("F", "C");
                     TabelFarenheitToCelsius(startTemp, stopTemp, tempDifference);
+                }
+                if (sendButton.Text == "Konvertera")
+                {
+                    sendButton.Text = "Rensa";
+                    
+                }
+                else
+                {
+                    sendButton.Text = "Konvertera";
+                    StartTempTextBox.Text = "";
+                    StopTempTextBox.Text = "";
+                    TempDifferenceTextBox.Text = "";
+                    TempPresentationPanel.Visible = false;
                 }
             }
         }

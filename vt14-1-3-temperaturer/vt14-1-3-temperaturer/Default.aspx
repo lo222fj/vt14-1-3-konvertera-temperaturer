@@ -82,6 +82,7 @@
                             MinimumValue="1" Type="Integer"></asp:RangeValidator>
                     </asp:Panel>
                 </div>
+                <%--Konvertering, radioknappar--%>
                 <div id="convertingDiv">
                     <asp:Label ID="convertingLabel" runat="server" Text="Typ av konvertering"></asp:Label>
                     <asp:RadioButton ID="RadioButton1" CssClass="radioButtons"
@@ -90,7 +91,7 @@
                         runat="server" Text="Farenheit to Celcius" GroupName="ChooseTempScale" />
                 </div>
                 <p>
-                    <asp:Button ID="sendButton" runat="server" Text="Konvertera" OnClick="sendButton_Click" />
+                    <asp:Button ID="sendButton" runat="server" Text="Konvertera" ViewStateMode="Enabled" OnClick="sendButton_Click" />
                 </p>
             </div>
             <asp:Panel ID="TempPresentationPanel" runat="server">
